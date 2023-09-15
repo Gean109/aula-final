@@ -1,0 +1,61 @@
+//Desenvolvimento de um Programa em JavaScript
+
+
+
+
+/*
+Requisitos do Sistema:
+
+Criar uma nova tarefa com título, descrição e status padrão como
+"pendente".
+Visualizar a lista de todas as tarefas com seus detalhes.
+Marcar uma tarefa como "concluída".
+Editar o título, descrição ou status de uma tarefa existente.
+Excluir uma tarefa.
+*/
+/*
+let  Titulo = (pendente)
+let  Descriçao = (pendente)
+let  Status = (pendente)
+*/
+
+
+/*
+let = tarefa1  (Titulo, Descriçao, Status) 
+*/
+
+
+function tarefa1(tarefa){
+    if(tarefa === "Titulo") {
+       return "pendente";
+   } else if(tarefa === "Descriçao"){
+       return "concluida";
+   } else if(tarefa === "Status"){
+       return "pendente";
+   }
+}
+console.log(tarefa1(
+       prompt("Digite algo")));
+
+
+
+function lista(){
+    const quantidadeDeTarefas = Number(prompt("Quantas tarefas você tem?"));
+if(quantidadeDeTarefas === 0) {
+    console.log("Ótimo,sem tarefas hoje");
+} else if (quantidadeDeTarefas > 0) {
+    const nomesDasTarefas = [];
+    const descriçao = [];
+    for (let i = 1; 1; i <= quantidadeDeTarefas, i++) {
+        let nomeTarefa = prompt(`Digite o nome da sua ${i} tarefa:`);
+        nomesDasTarefas.push(nomeTarefa);
+        let textodescriçao = prompt("Descriçao da tarefa");
+        descriçao.push("Descriçao da tarefa: ", textodescriçao)
+    }
+}
+}
+
+
+
+
+/*
